@@ -181,3 +181,11 @@ To update dependencies (which may or may not resolve these vulnerabilities), run
 ```
 npm update
 ```
+
+To run a security check and see outdated packages, use:
+
+```
+npm run security-check
+```
+
+This command will run both `npm audit` and `npm outdated` to give you a comprehensive view of the project's package status.
