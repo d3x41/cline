@@ -156,3 +156,28 @@ To contribute to the project, start with our [Contributing Guide](CONTRIBUTING.m
 ## License
 
 [Apache 2.0 © 2024 Cline Bot Inc.](./LICENSE)
+
+## Known Vulnerabilities
+
+As of the latest update, there are some known vulnerabilities in nested dependencies:
+
+- nth-check: Inefficient Regular Expression Complexity
+- postcss: Line return parsing error
+
+These vulnerabilities are in dependencies of react-scripts and do not directly affect the application code. We are monitoring these issues and will update when fixes become available that don't break compatibility.
+
+## Development
+
+When working on this project, be aware of the above vulnerabilities. Always use the latest versions of dependencies when possible, and regularly check for updates.
+
+To check for vulnerabilities, run:
+
+```
+npm audit
+```
+
+To update dependencies (which may or may not resolve these vulnerabilities), run:
+
+```
+npm update
+```
